@@ -13,5 +13,5 @@ terms = {
 
 
 for k,v in terms.items():
-    print(k)
-    print(v)
+    print(k+"\n")
+    print(v+"\n")
