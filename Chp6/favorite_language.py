@@ -3,9 +3,19 @@ favorite_languages = {
       'sarah': ['c'],
       'edward': ['rust', 'go'],
       'phil': ['python', 'haskell'],
+      'drew': [],
+      'phillip': [],
+      'jason': [],
+      'andrew':[]
       }
 
 for name, languages in favorite_languages.items():
     print(f"\n{name.title()}'s favorite languages are:")
-    for language in languages:
-        print(f"\t{language.title()}")
+    if languages != []:
+        for language in languages:
+            print(f"\t{language.title()}")
+        print(f"{name.title()}, thank you for taking the poll.")
+    else:
+        print(f"{name.title()}, please take the poll!")
+    
+    
