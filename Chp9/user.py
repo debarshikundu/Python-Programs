@@ -31,5 +31,3 @@ class Privileges:
         for privilege in self.privileges:
             print(privilege)   
 
-eric = Admin("Eric", "Sanchez", "04/04/99")
-eric.privileges.show_privileges()
