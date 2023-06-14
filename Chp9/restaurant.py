@@ -18,18 +18,6 @@ class Restaurant:
     def increment_number_served(self, additional_served):
         self.number_served += additional_served
 
-restaurant = Restaurant("PTerry's", "Fast Food")
-
-print("\nNumber served: " + str(restaurant.number_served))
-restaurant.number_served = 430
-print("Number served: " + str(restaurant.number_served))
-
-restaurant.set_number_served(1257)
-print("Number served: " + str(restaurant.number_served))
-
-restaurant.increment_number_served(239)
-print("Number served: " + str(restaurant.number_served))
-
 class IceCreamStand(Restaurant):
     def __init__(self, name, cuisine_type='ice_cream'):
         """Initialize an ice cream stand."""
