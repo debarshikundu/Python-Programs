@@ -29,3 +29,20 @@ print("Number served: " + str(restaurant.number_served))
 
 restaurant.increment_number_served(239)
 print("Number served: " + str(restaurant.number_served))
+
+class IceCreamStand(Restaurant):
+    def __init__(self, name, cuisine_type='ice_cream'):
+        """Initialize an ice cream stand."""
+        super().__init__(name, cuisine_type)
+        self.flavors = []
+    def displayFlavors(self):
+        """Display the flavors available."""
+        print("\nWe have the following flavors available:")
+        for flavor in self.flavors:
+            print("- " + flavor.title())
+
+big_one = IceCreamStand('The Big One')
+big_one.flavors = ['vanilla', 'chocolate', 'black cherry']
+
+big_one.describe_restaurant()
+big_one.displayFlavors()
