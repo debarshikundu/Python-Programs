@@ -3,6 +3,8 @@ class Restaurant:
     def __init__(self, restaurant_name, cuisine_type):
         self.restaurant_name = restaurant_name
         self.cuisine_type = cuisine_type
+        self.number_served = 0
+
     """Restaurant name + Cuisine Type..."""
     def describe_restaurant(self):
         return self.restaurant_name + " " + self.cuisine_type
@@ -10,14 +12,20 @@ class Restaurant:
     def open_restaurant(self):
         print("Restaurant is open!!!")
 
-restaurant1 = Restaurant("PTerry's", "Fast Food")
+    def set_number_served(self, number_served):
+        self.number_served = number_served
 
-restaurant2 = Restaurant("Shake Shack", "Fast Casual Food")
+    def increment_number_served(self, additional_served):
+        self.number_served += additional_served
 
-restaurant3 = Restaurant("Haagen Dazs", "Ice Cream")
+restaurant = Restaurant("PTerry's", "Fast Food")
 
-print(restaurant1.describe_restaurant())
+print("\nNumber served: " + str(restaurant.number_served))
+restaurant.number_served = 430
+print("Number served: " + str(restaurant.number_served))
 
-print(restaurant2.describe_restaurant())
+restaurant.set_number_served(1257)
+print("Number served: " + str(restaurant.number_served))
 
-print(restaurant3.describe_restaurant())
+restaurant.increment_number_served(239)
+print("Number served: " + str(restaurant.number_served))
