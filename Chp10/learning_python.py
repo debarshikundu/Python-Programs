@@ -7,8 +7,8 @@ contents = path.read_text()
 #prints out entire file
 print(contents)
 #splits lines into list
-lines = contents.splitlines()
+#lines = contents.splitlines()
 #prints each line on a new line
-for line in lines: 
+for line in contents.splitlines(): 
     print(line)
     print(line.replace('Python','C')) #Replaces Python with C
