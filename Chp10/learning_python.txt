@@ -1,0 +1,5 @@
+In Python you can perform arithmetic.
+In Python you can have variables.
+In Python you can generate machine learning models.
+In Python you can predict data.
+In Python you can write the backend for web applications.
