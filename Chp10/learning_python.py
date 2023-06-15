@@ -11,3 +11,4 @@ lines = contents.splitlines()
 #prints each line on a new line
 for line in lines: 
     print(line)
+    print(line.replace('Python','C')) #Replaces Python with C
