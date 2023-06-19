@@ -3,10 +3,6 @@ import pygame
 
 from scratch_cat import Cat
 
-import sys
-
-import pygame
-
 from settings import Settings
 
 class BlueCatGame:

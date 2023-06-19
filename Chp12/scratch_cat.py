@@ -1,6 +1,5 @@
 import pygame
 
-import pygame
  
 class Cat:
  
